@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-export const mvnoRestResponse = z.object({
+export const MvnoRestResponseSchema = z.object({
     user_id: z.string(),
     msisdn: z.string(),
     usage: z.object({
