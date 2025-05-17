@@ -26,6 +26,6 @@ test('mvnoResponseToInternal throws error when input has missing data', () => {
     expect(() => mvnoResponseToInternal(missingDataResponse)).toThrow()
 })
 
-test('mvnoResponseToInternal throws error when input has missing data', () => {
+test('mvnoResponseToInternal throws error when input has incorrect type', () => {
     expect(() => mvnoResponseToInternal(incorrectTypeResponse)).toThrow()
 })
