@@ -1,11 +1,11 @@
 import { type InternalApiFormat, type MvnoRestResponse } from "../../types/Api"
-import { mvnoRestResponse } from "../../zodSchemas/apiResponses"
+import { MvnoRestResponseSchema } from "../../zodSchemas/apiResponses"
 
 const mvnoResponseToInternal = (response: MvnoRestResponse): InternalApiFormat => {
     
     // Zod is used to validate data in response, if data does not validate correctly an error is thrown
 
-    mvnoRestResponse.parse(response)
+    MvnoRestResponseSchema.parse(response)
     
     const internalApiObj: InternalApiFormat = {
         telgea_user_id: response.user_id,

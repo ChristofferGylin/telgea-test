@@ -1,7 +1,7 @@
 import { z } from 'zod'
-import { mvnoRestResponse } from "../zodSchemas/apiResponses"
+import { MvnoRestResponseSchema } from "../zodSchemas/apiResponses"
 
-export type MvnoRestResponse = z.infer<typeof mvnoRestResponse>
+export type MvnoRestResponse = z.infer<typeof MvnoRestResponseSchema>
 
 export type SMSCharge = {
     message_id: string,
