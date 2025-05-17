@@ -1,4 +1,4 @@
-import  { z } from 'zod'
+import { z } from 'zod'
 import { mvnoRestResponse } from "../zodSchemas/apiResponses"
 
 export type MvnoRestResponse = z.infer<typeof mvnoRestResponse>
