@@ -1,4 +1,6 @@
-#Architecture & Approach
+# Telgea Code Test
+
+## Architecture & Approach
 
 The REST converter function created takes an object of type MvnoRestResponse as argument, and uses Zod to validate the data. The validation schema assumes all values are mandatory.
 
@@ -10,7 +12,7 @@ Unit tests are created using Jest.
 
 In index.ts you will find a simple function mocking an api-request that will show how the converter function can be used.
 
-#Folder Structure
+## Folder Structure
 
 The REST converter function created can be found in src/utils/converters, along with its unit test file.
 
